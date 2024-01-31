@@ -13,6 +13,7 @@ dependencies:
   - idr
   - deeptools
   - samtools
+  - ncurses
   - bedtools
   - r-base
   - r-dplyr
