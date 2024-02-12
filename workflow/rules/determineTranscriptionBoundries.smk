@@ -47,7 +47,7 @@ rule combineCovAndPeaks:
 # Adds total number of reads to the peaks coverage information.
 rule addTotalReadsToCounts:
     input: 
-        counts:'{sample}_peak_calling/{prefix}.{num}end.{sign}.peaks.oracle.narrowPeak.counts', 
+        counts='{sample}_peak_calling/{prefix}.{num}end.{sign}.peaks.oracle.narrowPeak.counts', 
         bam='results/alignments/BAM_files_{sample}/{prefix}.sorted.bam'
     output: temp('{sample}_peak_calling/{prefix}.{num}end.{sign}.peaks.oracle.narrowPeak.counts.withTR')
     conda:
