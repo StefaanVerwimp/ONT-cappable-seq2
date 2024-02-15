@@ -4,6 +4,8 @@ This document provides a comprehensive overview of the updated ONT-cappable-seq 
 
 ## Installation
 
+**Note:** This snakemake pipeline is designed for Linux systems! Windows users are advised to install [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) before proceeding with the installation.
+
 1. Install Snakemake by following the [instructions provided here](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html).
 
 2. Clone the ONT-cappable-seq2 repository to the desired location to obtain the Snakemake pipeline:
@@ -51,7 +53,7 @@ ONT-cappable-seq2/
 
 ```yaml
 Sample name: sampleID
-fasta file: input/genome_data/sampleID.fasta 
+fasta file: input/genome_data/sampleID.fasta
 enriched fastq: input/fastq_data/sampleID_enriched.fastq
 control fastq: input/fastq_data/sampleID_control.fastq
 ID: group
@@ -61,14 +63,14 @@ cluster width:
   TSS: 15
   TTS: 30
 
-minimum coverage: 
+minimum coverage:
   enriched:
     TSS: 25
     TTS: 25
   control:
     TSS: 2
     TTS: 2
-    
+
 peak alignment error: 2
 TSS Threshold: 1.5
 TTS threshold: 0.25
