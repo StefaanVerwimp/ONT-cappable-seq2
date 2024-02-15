@@ -53,7 +53,7 @@ rule addTotalReadsToCounts:
     conda:
         "../envs/env_transcription_boundaries.yaml"
     shell:
-        """
+        r"""
         total_mapped=$(samtools view -c -F4 {input.bam})
         awk -v total_mapped=$total_mapped '{{print $0, total_mapped}}' {input.counts} > {output}
         """
