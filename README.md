@@ -113,3 +113,4 @@ cd ONT-cappable-seq2
 snakemake --use-conda --cores 8
 ```
 During the initial run, the pipeline will install all necessary Conda packages, which may take some time. Subsequent runs will reuse this Conda environment.
+
